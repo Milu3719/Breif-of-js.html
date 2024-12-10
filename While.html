@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS</title>
+
+</head>
+
+<body>
+
+    <script>
+
+//1+2+......+25
+let number=1;
+let sum=0;
+while(number<=25)
+{
+    sum=sum+number;
+    number++;
+
+}
+document.write("Sum is:",sum);
+
+//sum of even
+let num1=2;
+let total1=0
+while(num1<=60)
+{
+total=total+num1;
+num1=num1+2
+}
+document.write("total even value", total)
+
+let teamA=prompt("Enter the TEAM A: ");
+    let teamB = prompt("Enter the TEAM B: ");
+    let scoreA=0;
+    let scoreB=0
+    let countinuegame=true;
+    while(countinuegame)
+{
+    let scorer = prompt('Who scored? Enter "${teamA}" or "${teamB}" (or type end to finish): ').toLowerCase();
+
+    if(scorer===teamA.toLocaleLowerCase())
+{
+scoreA++;
+}
+
+        if (scorer === teamA.toLocaleLowerCase()) {
+            scoreB++;
+        }
+
+        else if (scorer==="end")
+        {
+            continuegame=false;
+
+        }
+        else{
+            document.write("invalid input")
+        }
+        document.write("invalid score:.......")
+        document.write("${teamA}: ${scoreA} ")
+         document.write("${teamB}: ${scoreB} ")
+}
+
+    </script>
+
+
+</body>
+
+</html>
